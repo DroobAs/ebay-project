@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ebay |sign in</title>
+        <link rel="stylesheet" href="Home.css">
+        <link rel="shortcut icon" type="image" href="Resources/favicon.ico">
+
+ <!--card icon-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+    </head>
+
+    <body onload="msg()">
+
+<!-----------Tell Us------------>
+    <div style="width: 100%; height: 17px; text-align: right; background-color: rgb(255, 255, 255); font-size: 13px">
+        <a href="#"> Tell us What You Think  </a> &nbsp;&nbsp;&nbsp;
+    </div>
+
+<!------------Logo------------>
+    <div style="width: 100%; height: 60px; text-align: left; background-color: rgb(255, 255, 255);">
+       <a href="index.html">
+        <img src="Resources/ebay.PNG" style="margin-left: 20px; width: 130px; height: 60px;">
+       </a>
+    </div>
+
+<!----------------------------------------------Body------------------------------------------->
+<div style="width: 100%; height: 700px; text-align: center; background-color: rgb(255, 255, 255);">
+
+    <h1>Hello</h1>
+    <p>sign in to ebay or <a href="register.html" style="text-decoration: underline;">create an account</a></p>
+
+<br>
+
+    <form id="singform">
+        <input type="email" placeholder="Enter Your Email or Username" id="inmail" style="border-radius: 7px; height: 35px; width: 350px;padding-left: 7px;"><br><br>
+        <input type="password" placeholder="password" id="inpass" style="border-radius: 7px; height: 35px; width: 350px;padding-left: 7px;">
+        
+        <p id="mailwrong"></p>
+    <br>
+        <a href="index.html">
+        <input type="submit" class="singbtn" value="Login" onclick="sure()">
+        </a>
+    </form>
+
+<br><br>
+
+
+    <p style="font-size: 11px; color: rgb(116, 113, 113);">_______________________ or _______________________</p>
+<br><br>
+
+
+<!------------------------------------Social------------------------------------>
+    <a href="https://www.facebook.com/">
+        <button type="button" class="singbtn">
+        <i class="fa-brands fa-facebook" style="font-size: 30px;"></i> Continue with Facebook</button>
+    </a>
+
+<br><br>
+    <a href="https://accounts.google.com/Login">
+        <button type="button" class="singbtn2">
+            <i class="fa-brands fa-google" style="font-size: 30px;"></i> Continue with Google</button>
+    </a>
+
+<br><br>
+    <a href="https://secure2.store.apple.com/shop/signIn">
+        <button type="button" class="singbtn2">
+            <i class="fa-brands fa-apple" style="font-size: 30px;"></i> Continue with Apple</button>
+    </a>
+<br><br>
+<p style="font-size: 12px;" >
+        <input type="checkbox" id="stay"><label for="stay"> Stay signed in</label><br><br>
+        Using a public or shared device?<br>
+        Uncheck to protect your account.<br>
+        <a href="#">Learn more</a> 
+</p>
+
+
+
+
+
+</div>
+
+
+<!----------------------------------------Footer------------------------------------------>
+<hr>
+<footer style="width: 100%; height: 130px; text-align: center; background-color: rgb(255, 255, 255);font-size: 11px;">
+    <br><br>
+    Copyright © 1995-2022 eBay Inc. All Rights Reserved. Accessibility, User Agreement, Privacy, Cookies, Do not sell my personal information and AdChoice
+    <br><br>
+    <img src="norton.jpg" alt="" class="png">
+</footer>
+
+
+<script>
+
+function sure()
+{
+    
+    if (window.localStorage.user == document.getElementById("inmail").value && window.localStorage.pass == document.getElementById("inpass").value)
+    {
+        window.localStorage.connect = 1;
+        document.getElementById("singform").action = "index.html";
+        window.localStorage.msg = 0;
+
+    }
+    else
+    {
+        window.localStorage.connect = 0;
+        window.localStorage.msg = 1;
+        document.getElementById("mailwrong").innerHTML = "* Wrong Email or password";
+    }
+}
+
+
+function msg()
+{
+     if (window.localStorage.msg == 1)
+     {
+        document.getElementById("mailwrong").innerHTML = "* Wrong Email or password";
+     }
+}
+
+
+</script>
+
+
+
+
+
+
+    </body>
+</html>

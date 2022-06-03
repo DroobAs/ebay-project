@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ebay |Search</title>
+        <link rel="stylesheet" href="Home.css">
+        <link rel="shortcut icon" type="image" href="Resources/favicon.ico">
+
+ <!--card icon-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+
+    </head>
+
+    <body id="searchp" onload="searchinJson()">
+
+   <div class="firstdiv">
+        <nav id="nav1">
+           <ul>
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span id="logged">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                
+              <li>Hi! </li>
+              <li><a href="signin.html" class="signReg">Sign in</a></li>
+              <li> or </li>
+              <li><a href="register.html" class="signReg">Register</a></li>
+            </span>
+              <li><a href="#" class="underlinehovernav1">Daily Deals</a></li>
+              <li><a href="#" class="underlinehovernav1">Help & Contact</a></li>
+
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;               
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;               
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;               
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;               
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+              <li><a href="#">ship to</a></li>
+              <li><a href="#" class="underlinehovernav1">sell</a></li>
+
+
+              <li>
+                 <a href="#">Watchlist <i class="fa-solid fa-angle-down"></i></a>
+                 <ul>
+                    <li style="text-align: center;"><h4>Please<a href="signin.html" class="inwatch">sign in</a> to view items you are watching.</h4></li>
+                 </ul>
+              </li>
+
+              <li>
+                 <a href="#">My ebay <i class="fa-solid fa-angle-down"></i></a>
+                 <ul>
+                    <li><a href="#">Summary</a></li>
+                    <li><a href="#">Recently viewed</a></li>
+                    <li><a href="#">Bids/Offers</a></li>
+                    <li><a href="#">Watchlist</a></li>
+                    <li><a href="#">Purchase History</a></li>
+                    <li><a href="#">Buy Again</a></li>
+                    <li><a href="#">selling</a></li>
+                    <li><a href="#">saved searches</a></li>
+                    <li> <a href="#">seved sellers</a></li>
+                    <li><a href="#">Massages</a></li>
+                 </ul>
+              </li>
+
+              <li > <!--Alert-->
+                <a href="#"><i class="fa-regular fa-bell" style="font-size: 20px;"></i></a>
+                <ul style="right: 15px;">
+                   <li style="text-align: center;"><h4>Please<a href="signin.html" class="inwatch"> sign in </a>to view Notifications.</h4></li>
+                </ul>
+             </li>
+
+             <li> <!--Cart-->
+                <a href="card.html"><i class="fa-solid fa-cart-shopping" style="font-size: 20px;" id="cart"></i></a>
+                <ul style="right: 5px;">
+                   <li style="text-align: center; padding: 10px; background-color: white;"  id="incart">
+                    <h3> &nbsp;Your cart is empty! &nbsp;</h3>
+                        <br>
+                    <h5> &nbsp;Time to start shopping! &nbsp;</h5>
+                        </li>
+
+                </ul>
+             </li>
+
+           </ul>
+        </nav>
+   </div>
+
+        <hr>
+
+   <div class="div2">
+       <table>
+          <tr style="width: 100%; float: left;">
+             <td class="logoimg">
+                <a href="index.html"><img src="Resources/ebay.PNG" id="logo"></a>
+             </td>
+
+             <td class="shop" style="float: left;">
+               <a href="#" class="shopby" style="border: 0;background-color: white;font-family: cursive;top: 5px; ">Shop by&nbsp; category</a>
+               <ul class="ulshop">
+                  <li class="shopping">
+                     <div style="margin: 0% auto; min-height: 50px; min-width: 60px; box-sizing: border-box; -webkit-box-sizing: border-box; background-color: white;">
+                        
+                              <!-- First span -->
+                              <span style="width: 30%; height: 100%; float: left; margin-left: 5px;">
+                                       
+                                       <h4 class="shopitem">Collectibles & art</h4>                                   
+                                       <p style="font-size: 11px; text-align: left; color: black;">
+                                       <a href="#" class="shopitem"> Collectibles<br></a>
+                                       <a href="#" class="shopitem"> Antiques<br></a>
+                                       <a href="#" class="shopitem"> Sports memorabilia<br></a>
+                                       <a href="#" class="shopitem"> Art<br></a>
+                                       </a></p>
+
+                                       <h4 class="shopitem">Electronics</h4>                                   
+                                       <p style="font-size: 11px; text-align: left;">
+                                       <a href="#" class="shopitem"> Computers & tablets<br></a>
+                                       <a href="#" class="shopitem"> Cameras & photos<br></a>
+                                       <a href="#" class="shopitem"> TV, audio & surveillance<br></a>
+                                       <a href="#" class="shopitem"> Cell phones & accessories<br></a>
+                                       </a></p>
+
+                                       <h4 class="shopitem">Fashion</h4>
+                                       <p style="font-size: 11px; text-align: left;">
+                                       <a href="#" class="shopitem"> Women<br></a>
+                                       <a href="#" class="shopitem"> Men<br></a>
+                                       <a href="#" class="shopitem"> Jewelry & watches<br></a>
+                                       <a href="#" class="shopitem"> Shoes<br></a>
+                                       </a></p><hr>
+
+                                 </span>
+                                 <!-- second span -->
+                              <span style="width: 29%; height: 100%; float: left; margin:0;">
+
+                                    <h4 class="shopitem">Home & garden</h4>                                   
+                                    <p style="font-size: 11px; text-align: left; color: black;">
+                                    <a href="#" class="shopitem"> Yard, garden & outdoor<br></a>
+                                    <a href="#" class="shopitem"> Crafts<br></a>
+                                    <a href="#" class="shopitem"> Home improvement<br></a>
+                                    <a href="#" class="shopitem"> Pet supplies<br></a>
+                                    </a></p>
+            
+                                    <h4 class="shopitem">Auto Parts & Accessories</h4>                                   
+                                    <p style="font-size: 11px; text-align: left;">
+                                    <a href="#" class="shopitem"> GPS & Security Devices<br></a>
+                                    <a href="#" class="shopitem"> Radar & Laser Detectors<br></a>
+                                    <a href="#" class="shopitem"> Care & Detailing<br></a>
+                                    <a href="#" class="shopitem"> Scooter Parts & Accessories<br></a>
+                                    </a></p>
+
+                                    <h4 class="shopitem">Musical instruments & gear</h4>
+                                    <p style="font-size: 11px; text-align: left;">
+                                    <a href="#" class="shopitem"> Guitar<br></a>
+                                    <a href="#" class="shopitem"> Pro audio equipment<br></a>
+                                    <a href="#" class="shopitem"> String<br></a>
+                                    <a href="#" class="shopitem"> Stage lighting & effects<br></a>
+                                    </a></p><hr>
+
+                                 </span>
+                                 <!-- Third span -->
+                              <span style="width: 30%; height: 100%; float: left; margin:0;">
+
+                                 <h4 class="shopitem">Sporting goods</h4>                                   
+                                 <p style="font-size: 11px; text-align: left; color: black;">
+                                 <a href="#" class="shopitem"> Outdoor sports<br></a>
+                                 <a href="#" class="shopitem"> Team sports<br></a>
+                                 <a href="#" class="shopitem"> Exercise & fitness<br></a>
+                                 <a href="#" class="shopitem"> Golf<br></a>
+                                 </a></p>
+         
+                                 <h4 class="shopitem">Toys & hobbies</h4>                                   
+                                 <p style="font-size: 11px; text-align: left;">
+                                 <a href="#" class="shopitem"> Radio control<br></a>
+                                 <a href="#" class="shopitem"> Kids toys<br></a>
+                                 <a href="#" class="shopitem"> Action figures<br></a>
+                                 <a href="#" class="shopitem"> Dolls & bears<br></a>
+                                 </a></p>
+
+                                 <h4 class="shopitem">Other categories</h4>
+                                 <p style="font-size: 11px; text-align: left;">
+                                 <a href="#" class="shopitem"> Video games & consoles<br></a>
+                                 <a href="#" class="shopitem"> Health & beauty<br></a>
+                                 <a href="#" class="shopitem"> Baby<br></a>
+                                 <a href="#" class="shopitem"> Business & industrial<br></a>
+                                 </a></p>
+                                 <hr>
+                                 <h3><p id="seeall">See All Categories -></p></h3>
+
+                                 </span>
+
+                     </div>
+            
+                  </li>
+               </ul>
+             </td>
+
+             <td  class="arrowsearch">
+               <i class="fa-solid fa-angle-down"></i>
+             </td>
+             <td>
+               <form action="">
+                  <div class="search_Area">
+                      <span class="S_icon"><i class="fa-solid fa-magnifying-glass" style="color: darkgray;"></i></span>
+                    <input type="text" class="searchinput" placeholder=" search for anything" id="search" name="_search">
+
+                    <select name="Select1" size="1" class="allcategory">
+                           <option value="">All categories</option>
+                           <option value="volvo">Volvo</option>
+                           <option value="saad">Saab</option>
+                           <option value="ford">Ford</option>
+                           <option value="toyota">Toyota</option>
+                           <option value="aston">Aston Martin</option>
+                           <option value="alfa">Alfa Romeo</option>
+                           <option value="volvo">Volvo</option>
+                           <option value="saad">Saab</option>
+                           <option value="ford">Ford</option>
+                           <option value="toyota">Toyota</option>
+                           <option value="aston">Aston Martin</option>
+                           <option value="alfa">Alfa Romeo</option>
+                           <option value="volvo">Volvo</option>
+                           <option value="saad">Saab</option>
+                           <option value="ford">Ford</option>
+                           <option value="toyota">Toyota</option>
+                           <option value="aston">Aston Martin</option>
+                           <option value="alfa">Alfa Romeo</option>
+                           <option value="volvo">Volvo</option>
+                           <option value="saad">Saab</option>
+                           <option value="ford">Ford</option>
+                           <option value="toyota">Toyota</option>
+                           <option value="aston">Aston Martin</option>
+                           <option value="alfa">Alfa Romeo</option>
+                     </select>
+
+                  </div>
+                  <button type="submit" value="Search" id="Gosearch" onclick="searchAbout()"><a href="search.html" style="color: white;">Search</a></button>
+                </form>
+             </td>
+
+             <td>
+               <a href="#" id="advanced"><h6>Advanced</h6></a>   
+             </td>
+          </tr>
+       </table>
+   </div>
+
+
+<!------------------------------------------Search Content----------------------------------------------->
+<div id="result" style="width: 100%; height: 600px; background-color: rgb(255, 255, 255); position: relative; text-align: center;">
+            <h2>* Search results *</h2>
+<hr>
+        <div id="resbox" style="padding-left: 20px; width: 80%; height: 80%; margin: 3% 10% 0 10%; background-color: rgb(255, 255, 255); position: absolute; border: 2px solid black;">
+
+        </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<!------------------------------------------End Search Content----------------------------------------------->
+
+<hr>
+<footer class="foot">
+    <div class="alllists">
+       <div class="flist" style="padding-left: 70px;width: 17.5%;" >
+           <ul style="list-style: none;">
+               <li>
+                   <h3>Buy</h3>
+               </li>
+               <li class="factwi">
+                   Registration
+               </li>
+               <li class="factwi">
+                   eBay Money Back Guarantee
+               </li>
+               <li class="factwi">
+                   Bidding & buying help
+               </li>
+               <li class="factwi">
+                   Stores
+               </li>
+           </ul>
+       </div>
+       <div class="flist" >
+           <div class="flist2">
+               <ul style="list-style: none;">
+                   <li>
+                       <h3>Sell</h3>
+                   </li>
+                   <li class="factwi">
+                       Start selling
+                   </li>
+                   <li class="factwi">
+                       Learn to sell 
+                   </li>
+                   <li class="factwi">
+                       Affiliates
+                   </li>
+               </ul>
+           </div>
+           <div class="flist3">
+               <ul style="list-style: none;">
+                   <li>
+                       <h3>Tools & apps</h3>
+                   </li>
+                   <li class="factwi">
+                       Developers
+                   </li>
+                   <li class="factwi">
+                       Security center
+                   </li>
+                   <li class="factwi">
+                       Site map
+                   </li>
+               </ul>
+           </div>
+       </div>
+       <div class="flist" >
+           <ul style="list-style: none;">
+               <li>
+                   <h3>Stay connected</h3>
+               </li>
+               <li class="factwi">
+                   eBay's Blogs
+               </li>
+               <li>
+                   <a href="https://www.facebook.com/" target="_blank" value="facebook" class="factwi"><i class="fa-brands fa-facebook"></i>Facebook</a> 
+               </li>
+               <li>
+                   <a href="https://twitter.com/" target="_blank" value="twitter" class="factwi"><i class="fa-brands fa-twitter"></i></i>Twitter</a> 
+               </li>
+           </ul>
+       </div>
+       <div class="flist" >
+           <ul style="list-style: none;">
+               <li>
+                   <h3>About eBay</h3>
+               </li>
+               <li class="factwi">
+                   Company info
+               </li>
+               <li class="factwi">
+                   News
+               </li>
+               <li class="factwi">
+                   Investors
+               </li>
+               <li class="factwi">
+                   Careers
+               </li>
+               <li class="factwi">
+                   Government relations
+               </li>
+               <li class="factwi">
+                   Advertise with us
+               </li>
+               <li class="factwi">
+                   Policies
+               </li>
+               <li class="factwi">
+                   Verified Rights Owner (VeRO) Program
+               </li>
+           </ul>
+       </div>
+       <div class="flist"  >
+           <div class="flist2" >
+               <ul style="list-style: none;">
+                   <li>
+                       <h3>Help & Contact</h3>
+                   </li>
+                   <li class="factwi">
+                       Seller Information Center
+                   </li>
+                   <li class="factwi">
+                       Contact us
+                   </li>
+               </ul>
+           </div>
+           <div class="flist3" >
+               <ul style="list-style: none;">
+                   <li class="factwi">
+                       <h3>Community</h3>
+                   </li>
+                   <li class="factwi">
+                       Announcements
+                   </li>
+                   <li class="factwi">
+                       Discussion boards
+                   </li>
+                   <li class="factwi">
+                       eBay Giving Works
+                   </li>
+               </ul>
+           </div>
+       </div>
+    </div>    
+    <div class="copyright" >
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+    
+    Copyright © 1995-2022 eBay Inc. All Rights Reserved. Accessibility, User Agreement, Privacy, Cookies, Do not sell my personal information
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    
+       <img src="norton.jpg" alt="" class="png">
+    
+       <div style="float: right; position: relative;">
+        <a href="#searchp" class="png"><i class="fa-solid fa-circle-arrow-up" style="font-size: 30px; bottom: 30px;position: fixed; left: 97%;" ></i></a>
+    </div>
+       
+    </div>
+    
+    </footer>
+
+    
+    <script src="Home.js"></script>
+         </body>
+    </html>
+    
